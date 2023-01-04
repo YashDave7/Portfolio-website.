@@ -1,0 +1,113 @@
+/* ### WORK EXP. AND EDUCATION SECTION ### */
+
+.qualification-section {
+    /* background-color: red; */
+    /* padding: 120px; */
+    width: 750px;
+    margin: auto;
+}
+
+.qualification-content {
+    /* background-color: yellow; */
+    display: block;
+    margin: auto;
+    /* padding: 20px 50px; */
+}
+
+.qualification__sections {
+    /* background-color: antiquewhite; */
+    display: block;
+    margin: auto;
+}
+
+.qualification-tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.qualification-button {
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.qualification-button:hover {
+    color: #57C9E0;
+}
+
+.qualification-icon {
+    font-size: 1.8rem;
+    margin-right: 0.25rem;
+}
+
+.qualification-data {
+    /* background-color: gray; */
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.qualification-title {
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.qualification-subtitle {
+    display: inline-block;
+    font-size: 0.93rem;
+    margin-bottom: 0.6rem;
+    color: #6A797C;
+}
+
+.qualification-calendar {
+    font-size: 0.8rem;
+    color: #9FABAD;
+    margin-bottom: 1rem;
+}
+
+.qualification-rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #57C9E0;
+    border-radius: 50%;
+}
+
+.qualification-line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #57C9E0;
+    transform: translate(6px, -7px);
+}
+
+.qualification-content[data-content] {
+    display: none;
+}
+
+.qualification-active[data-content] {
+    display: block;
+}
+
+.qualification-button.qualification-active {
+    color: #57C9E0;
+}
+
+
+@media screen and (max-width: 767px) {
+    .qualification-section {
+        width: fit-content;
+    }
+    
+    .qualification-data {
+        /* margin: auto; */
+        grid-template-columns: 0.5fr max-content 0.5fr;
+    }
+
+    .qualification-content {
+        margin: auto;
+        /* text-align: center; */
+    }
+    
+}

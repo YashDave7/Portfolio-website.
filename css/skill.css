@@ -1,0 +1,95 @@
+/* ### SKILLS SECTION ### */
+
+.skills-section {
+    width: 800px;
+    /* background-color: yellow; */
+}
+
+.skills-inner {
+    /* padding: 60px; */
+}
+
+.skills-section-headings {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.skills-section-headings h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.skills-section i {
+    font-size: 23px;
+    padding: 10px;
+    color: #57C9E0;
+}
+
+.skills-input {
+    /* width: 62vw; */
+}
+
+.skills-individual-section {
+    padding: 20px 0;
+}
+
+.skills-arrow {
+    font-size: 10px;
+}
+
+.skills-div {
+    /* width: 900px; */
+}
+
+.skills-section li {
+    /* width: 62vw; */
+    list-style: none;
+    margin: auto;
+    padding: 15px;
+}
+
+.skill-name-pert {
+    padding: 6px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-name-pert span {
+    font-size: 16px;
+}
+
+.progress-bar {
+    /* border-top: 6px solid #B6F0FC; */
+    border-top: 6px solid green;
+    border-width: 100%;
+    /* color: #57C9E0; */
+}
+
+.progress-bar div {
+    border-width: 100px;
+    border-top: 6px solid red;
+}
+
+.backend-skills {
+    display: block;
+}
+
+.frontend-skills {
+    display: none;
+}
+
+.extra-skills {
+    display: none;
+}
+
+.down-arrow {
+    /* font-size: 20px; */
+}
+
+
+@media screen and (max-width: 768px) {
+    .skills-section {
+        width: auto;
+    }
+}

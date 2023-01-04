@@ -1,0 +1,162 @@
+/* ### NAVIGATION BAR ### */
+
+.navigation {
+    position: fixed;
+    top: 0;
+    background-color: #162427;
+    z-index: 999;
+
+}
+
+.navbar {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.navbar-brand {
+    color: #EEFAFC;
+    font-weight: 500;
+}
+
+.navbar-brand:hover {
+    color: #57C9E0;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: #EEFAFC;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    color: #57C9E0;
+}
+
+.theme-button {
+    /* display: flex;
+    align-items: center; */
+    cursor: pointer;
+    font-size: 23px;
+    border: none;
+}
+
+.theme-button i {
+    padding-top: 8px;
+    /* padding-left: 20px; */
+}
+
+/*  ++++++++ NAVBAR FOR MOBILE SCREEN */
+
+.mobile-navbar {
+    z-index: 999;
+    background-color: #162427;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+}
+
+.mobile-navbar-brand {
+    color: #EEFAFC;
+    font-weight: 500;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.mobile-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.mobile-icons i {
+    margin: 0 5px;
+    padding: 0 5px;
+}
+
+/* ++++++++ MOBILE NAVBAR POP UP */
+.navbar-pop {
+    position: fixed;
+    bottom: 0px;
+    background-color: #162427;
+    width: 100%;
+    z-index: 999;
+    display: none;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    /* transition: all ease-in 1s; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* background-color: #2196F3; */
+}
+
+.grid-item {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.grid-item a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-close {
+    height: 40px;
+    text-align: right;
+    padding-right: 20px;
+    color: #57C9E0;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.grid-item a:hover {
+    color: #57C9E0;
+} 
+
+
+
+
+@media screen and (max-width: 930px) {
+    .navbar {
+        padding-right: 130px;
+        justify-content: space-between;
+    }
+
+    .navbar-brand {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .navigation {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 766px) { 
+    .mobile-navbar {
+        display: none;
+    }
+
+    .navbar-pop {
+        display: none;
+    }
+}

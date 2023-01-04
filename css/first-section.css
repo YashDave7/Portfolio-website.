@@ -1,0 +1,135 @@
+/* ### FIRST SECTION ### */
+
+.first-section {
+    padding-top: 150px;
+    width: 900px;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    grid-auto-rows: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first-section-socials {
+
+}
+
+.first-section-socials li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.first-section-socials a {
+    color: #57C9E0;
+    font-size: 28px;
+}
+
+.first-section-socials a:hover {
+    color: #4fb6cb;
+}
+
+.first-section-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.first-section-intro {
+    padding: 10px;
+}
+
+.first-section-intro h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.first-section-intro h5 {
+    color: #6A797C;
+    font-size: 23px;
+}
+
+.first-section-intro p {
+    font-size: 17px;
+    padding: 10px 0;
+    color: #6A797C;
+}
+
+.contact-me-btn {
+    margin: 5px;
+    color: white;
+    padding: 14px;
+    background-color: #57C9E0;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.home-img {
+
+}
+
+.home__blob {
+    width: 300px;
+
+}
+
+.home__blob-img {
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (max-width:1024px) {
+    .first-section {
+        width: auto;
+        justify-content: space-evenly;
+    }
+
+    .first-section-socials {
+        left: .8rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .first-section {
+        width: auto;
+        margin-top: 0;
+    }
+
+    .home__blob {
+        width: 230px;
+    }
+
+    .first-section-intro h1 {
+        font-size: 38px;
+    }
+
+    .first-section-intro h5 {
+        font-size: 18px;
+    }
+
+    .first-section-intro p {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width:570px) {
+    .first-section {
+        justify-content: space-around;
+    }
+
+    .first-section h1 {
+        font-size: 2rem;
+    }
+
+    .first-section-content {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    .home__blob {
+        width: 200px;
+    }
+}

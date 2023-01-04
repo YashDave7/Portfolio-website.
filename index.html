@@ -6,38 +6,558 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio | Yash Dave</title>
 
+  <!-- FONT AWESOME ICONS -->
+  <script src="https://kit.fontawesome.com/077c58acc8.js" crossorigin="anonymous"></script>
+
   <!-- BOOTSTRAP CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
   <!-- EXTERNAL CSS  -->
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/first-section.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/skill.css">
+  <link rel="stylesheet" href="css/work.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
-
-  <!-- NAVIGATION BAR -->
-  <div class="container">
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="">Yash Dave</a>
-    <div id="">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="">Work Ex.</a></li>
-        <li class="nav-item"><a class="nav-link" href="">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+  <!-- ++++++++ NAVIGATION BAR ++++++++ -->
+  <div class="navigation container-fluid">
+    <nav class="navbar">
+      <a class="navbar-brand" href="">Yash Dave</a>
+      <div id="">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="navbar-js nav-link" href="index.html">Home</a></li>
+          <!-- <li class="nav-item"><a class="navbar-js nav-link" href="#about">About</a></li> -->
+          <li class="nav-item"><a class="navbar-js nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="navbar-js nav-link" href="#work">Work Ex.</a></li>
+          <li class="nav-item"><a class="navbar-js nav-link" href="#project">Projects</a></li>
+          <li class="nav-item"><a class="navbar-js nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item theme-button">
+            <!-- <div class="theme-button"> -->
+              <!-- Moon -->
+              <i class="fa-regular fa-moon moon fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+              <!-- Sun -->
+              <i style="display: none;" class="fa-regular fa-sun sun"></i>
+            <!-- </div> -->
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
 
-  <!-- JAVASCRIPT -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+
+  <!-- ++++++++ NAVIGATION BAR FOR MOBILE ++++++++ -->
+  <div class="mobile-navbar">
+    <a class="mobile-navbar-brand" href="">Yash Dave</a>
+    <div class="mobile-icons">
+      <div class="theme-button">
+        <!-- Moon -->
+        <i class="fa-regular fa-moon moon fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i>
+        <!-- Sun -->
+        <i style="display: none;" class="fa-regular fa-sun sun"></i>
+      </div>
+      <div class="mobile-more">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- ++++++++ MOBILE-NAVBAR-POP-UP ++++++++ -->
+  <div class="navbar-pop">
+    <div class="grid-container">
+      <div class="grid-item">
+        <a class="pop-up-count" href="#home">
+          <i class="fa-solid fa-house"></i> <br>
+          Home
+        </a>
+      </div>
+      <!-- <div class="grid-item">
+        <a class="pop-up-count" href="#about">
+          <i class="fa-regular fa-user"></i> <br>
+          About
+        </a>
+      </div> -->
+      <div class="grid-item">
+        <a class="pop-up-count" href="#skills">
+          <i class="fa-regular fa-file-lines"></i> <br>
+          Skills
+        </a>
+      </div>
+      <div class="grid-item">
+        <a class="pop-up-count" href="#work">
+          <i class="fa-solid fa-graduation-cap"></i> <br>
+          Education
+        </a>
+      </div>
+      <div class="grid-item">
+        <a class="pop-up-count" href="#project">
+          <i class="fa-regular fa-images"></i> <br>
+          Portfolio
+        </a>
+      </div>
+      <div class="grid-item">
+        <a class="pop-up-count" href="#contact">
+          <i class="fa-regular fa-message"></i> <br>
+          Contact
+        </a>
+      </div>
+    </div>
+
+    <div class="navbar-close">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+  </div>
+
+  <!-- ++++++++ FIRST SECTION : NAME AND PHOTO ++++++++ -->
+  <div class=" first-section section" id="home">
+    <div class="first-section-socials">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/yashdave7/" target="_blank"><i
+              class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.instagram.com/yashdave.07/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li><a href="https://github.com/YashDave7" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="first-section-content">
+      <div class="home-img">
+        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <mask id="mask0" mask-type="alpha">
+            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+          130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+          97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+          0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"></path>
+          </mask>
+          <g mask="url(#mask0)">
+            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+          165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+          129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+          -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"></path>
+            <image class="home__blob-img" x="" xlink:href="Images/yash.png"></image>
+          </g>
+        </svg>
+      </div>
+
+      <div class=" first-section-intro">
+        <h1>Hi, I'am Yash</h1>
+        <h5>Web Developer</h5>
+        <p>Currently pursuing a BE in Information Technology.</p>
+        <a href="#contact" class="contact-me-btn btn">Contact me
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="contact-me-btn btn">Download Resume
+          <i class="fa-solid fa-cloud-arrow-down"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ++++++++ ABOUT ME ++++++++ -->
+  <!-- <div class="container about-me-section section" id="about">
+    <h2 class="section-heading">About Me</h2>
+    <h6 class="second-heading">My Introduction</h6>
+    <div class="inner-container-aboutme">
+      <div class="about-me-image">
+        <img src="Images/My project (1).png" alt="">
+      </div>
+      <div class="about-me-text">
+        <p>Second year Engineering student of Information Technology. Knowledge of tech,passinated developer,delivering
+          quality
+          work.</p>
+        <div class="aboutme-languages">
+          <div class="languages">
+            <span class="span">05+</span>
+            <br>
+            Language Knowledge
+          </div>
+          <div class="languages">
+            <span class="span">05+</span>
+            <br>
+            technical Languages Knowledge
+          </div>
+        </div>
+        <a class="resume-btn btn"> Download Resume
+          <i class="fa-solid fa-cloud-arrow-down"></i>
+        </a>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- ++++++++ SKILLS ++++++++ -->
+  <div class="skills-section container section" id="skills">
+    <h1 class="section-heading">Skills</h1>
+    <h6 class="second-heading">My technical level</h6>
+    <div class="skills-inner">
+
+      <div class="backend skills-individual-section">
+        <div class="skills-section-headings backend-heading">
+          <h2>
+            <i class="fa-solid fa-chart-bar"></i>
+            Backend
+          </h2>
+          <i id="backend-down-arrow" class="fa-solid fa-chevron-down down-arrow"></i>
+        </div>
+        <div class="skills-input backend-skills">
+          <ul>
+            <li>
+              <div class="skill-name-pert">
+                <span>nodeJS</span>
+                <span>60%</span>
+              </div>
+              <div class="progress-bar">
+                <div style="width: 20%" class=""></div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-name-pert">
+                <span>MySQL</span>
+                <span>70%</span>
+              </div>
+              <div class="progress-bar">
+                <div style="width:60%" class=""></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="frontend skills-individual-section">
+        <div class="skills-section-headings frontend-heading">
+          <h2>
+            <i class="fa-solid fa-laptop-code"></i>
+            frontend
+          </h2>
+          <i id="frontend-down-arrow" class="fa-solid fa-chevron-down down-arrow"></i>
+        </div>
+        <div class="skills-input frontend-skills">
+          <ul>
+            <li>
+              <div class="skill-name-pert">
+                <span>JavaScript</span>
+                <span>70%</span>
+              </div>
+              <div class="progress-bar">
+                <div style="width:60%" class=""></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-name-pert">
+                <span>css</span>
+                <span>80%</span>
+              </div>
+              <div class="progress-bar">
+                <div style="width:60%" class=""></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-name-pert">
+                <span>Bootstrap</span>
+                <span>90%</span>
+              </div>
+              <div class="progress-bar">
+                <div style="width:60%" class=""></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="extra skills-individual-section">
+        <div class="skills-section-headings extra-heading">
+          <h2>
+            <i class="fa-solid fa-code-branch"></i>
+            Extra
+          </h2>
+          <i id="extra-down-arrow" class="fa-solid fa-chevron-down extra-down-arrow"></i>
+        </div>
+        <div class="skills-input extra-skills">
+          <ul>
+            <li>
+              <div class="skill-name-pert">
+                <span>Git</span>
+                <span>60%</span>
+              </div>
+              <div class="progress-bar">
+                <div style="width:60%" class=""></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-name-pert">
+                <span>Github</span>
+                <span>750%</span>
+              </div>
+              <div class="progress-bar">
+                <div style="width:60%" class=""></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ++++++++  WORK EXPERIENCE AND EDUCATION ++++++++ -->
+
+  <div class="qualification-section section" id="work">
+    <h2 class="section-heading">Education / Work Exp.</h2>
+    <h6 class="second-heading">My journey</h6>
+
+    <div class="qualification-container">
+      <div class="qualification-tabs">
+        <div class="qualification-button qualification-active" data-target='#education'>
+          <i class="fa-solid fa-graduation-cap qualification-icon"></i>
+          Education
+        </div>
+      </div>
+
+      <div class="qualification__sections">
+        <!-- QUALIFICATION CONTENT -->
+        <div class="qualification-content qualification-active" data-content id="education">
+          <!-- QUALIFICATION 1 -->
+          <div style="text-align: end;" class="qualification-data">
+            <div>
+              <h3 class="qualification-title">SSC (10th)</h3>
+              <span class="qualification-subtitle">St. Xavier's High School</span>
+              <div class="qualification-calendar">
+                <i class="fa-solid fa-calendar-days"></i>
+                2019
+              </div>
+            </div>
+
+            <div>
+              <span class="qualification-rounder"></span>
+              <span class="qualification-line"></span>
+            </div>
+          </div>
+
+          <!-- QUALIFICATION 2 -->
+          <div class="qualification-data">
+            <div></div>
+            <div>
+              <span class="qualification-rounder"></span>
+              <span class="qualification-line"></span>
+            </div>
+
+            <div>
+              <h3 class="qualification-title">HSC (12th)</h3>
+              <span class="qualification-subtitle">Sardar Vallabhbhai Patel College of Science</span>
+              <div class="qualification-calendar">
+                <i class="fa-solid fa-calendar-days"></i>
+                2019 - 2021
+              </div>
+            </div>
+          </div>
+
+          <!-- QUALIFICATION 3 -->
+          <div style="text-align: right;" class="qualification-data">
+            <div>
+              <h3 class="qualification-title">Information Technology (B.E.)</h3>
+              <span class="qualification-subtitle">Thadomal Shahani Engineering College</span>
+              <div class="qualification-calendar">
+                <i class="fa-solid fa-calendar-days"></i>
+                2021 - 2025 <br>
+                pursuing
+              </div>
+            </div>
+
+            <div>
+              <span class="qualification-rounder"></span>
+              <span class="qualification-line"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ++++++++  PORTFOLIO SECTION (PROJECTS) ++++++++ -->
+
+  <section class="projects-section section" id="project">
+    <h1 class="section-heading">Portfolio</h1>
+    <h6 class="second-heading">My Projects</h6>
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+        <div class="carousel-item item active" data-bs-interval="4000">
+          <div class="carousel-item-inner">
+            <img src="Images/chat-ss.png" alt="">
+            <div>
+              <h3>Chit-Chat App.</h3>
+              <p>A group chatting web application made using nodeJs and Socket.io</p>
+              <a class="projects-section-btn btn">Demo
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a class="projects-section-btn btn">Code
+                <i class="fa-solid fa-code"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item item" data-bs-interval="4000">
+          <div class="carousel-item-inner">
+            <img src="Images/spotify-ss.png" alt="">
+            <div>
+              <h3>Spotify Clone</h3>
+              <p>A function music player made using css and javascript.</p>
+              <a class="projects-section-btn btn">Demo
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a class="projects-section-btn btn">Code
+                <i class="fa-solid fa-code"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item item" data-bs-interval="4000">
+          <div class="carousel-item-inner">
+            <img src="Images/tindog-ss.png" alt="">
+            <div>
+              <h3>Tindog</h3>
+              <p>A fully responsive web application with nice design made using Bootstrap. </p>
+              <a class="projects-section-btn btn">Demo
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a class="projects-section-btn btn">Code
+                <i class="fa-solid fa-code"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item item" data-bs-interval="4000">
+          <div class="carousel-item-inner">
+            <img src="Images/dice-ss.png" alt="">
+            <div>
+              <h3>Dice Game</h3>
+              <p>A 2 player dice game made using JavaScript.</p>
+              <a class="projects-section-btn btn">Demo
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a class="projects-section-btn btn">Code
+                <i class="fa-solid fa-code"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Buttons for next and pervious -->
+      <button class="carousel-control-prev carousel-buttons" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <!-- <span class="carousel-control-prev-icon " aria-hidden="true"></span> -->
+        <i class="fa-solid fa-angle-left"></i>
+        <!-- <span class="visually-hidden">Previous</span> -->
+      </button>
+      <button class="carousel-control-next carousel-buttons" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+        <i class="fa-solid fa-angle-right"></i>
+        <!-- <span class="visually-hidden">Next</span> -->
+      </button>
+
+    </div>
+  </section>
+
+
+  <!-- ++++++++  CONTACT ME SECTION ++++++++ -->
+  <div class="container contact-me-section section" id="contact">
+    <h1 class="section-heading">Contact me</h1>
+    <h6 class="second-heading">Connect with me</h6>
+    <div class="inner-contact-me">
+      <div class="inner-1-contact-me">
+        <div class="email">
+          <div>
+            <i class="fa-regular fa-envelope contact-icon"></i>
+          </div>
+          <div>
+            <h4>E-mail</h4>
+            <p>yashdave307@gmail.com</p>
+          </div>
+        </div>
+        <div class="location">
+          <div>
+            <i class="fa-solid fa-location-dot contact-icon"></i>
+          </div>
+          <div>
+            <h4>Location</h4>
+            <p>Mumbai,Maharashtra</p>
+          </div>
+        </div>
+      </div>
+      <div class="inner-2-contact-me">
+        <form action="">
+          <input type="text" name="" id="" placeholder="Name">
+          <input type="email" name="" id="" placeholder="E-mail">
+          <!-- <input class="input-full" type="text" name="" id="" placeholder="Subject"> -->
+          <input style="height: 200px;" class="input-full" type="text" name="" id="" placeholder="Enter your message...">
+          <button class="send-message-btn btn" type="submit">Send Message
+            <i class="fa-solid fa-arrow-right"></i>
+
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ++++++++ FOOTER ++++++++ -->
+  <div class="container-fluid footer">
+    <div class="footer-main">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <div style="font-size: 2rem; font-weight: 700;">Yash Dave</div>
+          <div style="font-size: 1rem;">Web Developer</div>
+          <div class="footer-socials">
+            <a class="nav-link" href="https://www.linkedin.com/in/yashdave7/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="nav-link" href="https://www.instagram.com/yashdave.07/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a class="nav-link" href="https://github.com/YashDave7" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#work">Work Ex.</a></li>
+        <li class="nav-item"><a class="nav-link" href="#project">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+      </ul>
+
+    </div>
+    <div class="copyright">
+      © Yash Dave. All rights reserved.
+    </div>
+  </div>
+
+  <!-- ### JAVASCRIPT ### -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script> -->
+
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <!-- EXTERNAL JS -->
+  <script src="js/index.js"></script>
 </body>
 
 </html>

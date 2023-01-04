@@ -1,0 +1,94 @@
+.contact-me-section {
+    width: 900px;
+}
+
+.inner-contact-me {
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* margin: auto; */
+    /* text-align: center; */
+}
+
+.inner-1-contact-me {
+    padding: 20px 0;
+}
+
+.inner-1-contact-me i {
+    color: #57C9E0;
+    padding: 8px;
+}
+
+.inner-1-contact-me h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.inner-1-contact-me p {
+    font-size: 16px;
+    color: #6A797C;
+}
+
+.email {
+    display: flex;
+    align-items: flex-start;
+}
+
+.location {
+    display: flex;
+    align-items: flex-start;
+}
+
+.inner-2-contact-me form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background-color: #EEFAFC;
+    border: none;
+    color: #6A797C;
+    font-size: 16px;
+    width: 400px;
+    padding: 20px 15px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.inner-2-contact-me input:focus {
+    border: 0px solid white;
+}
+
+.send-message-btn {
+    background-color: #57C9E0;
+    color: #EEFAFC;
+    font-weight: 500;
+    width: 200px;
+    padding: 16px;
+}
+
+.send-message-btn i {
+    color: white;
+}
+
+@media screen and (max-width:760px) {
+    .contact-me-section {
+        width: auto;
+    }
+
+    .inner-contact-me {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    input {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:423px) {
+    input {
+        width: 300px;
+    }
+}
