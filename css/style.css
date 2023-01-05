@@ -13,7 +13,7 @@ body {
 }
 
  .section-heading {
-    font-size: 42px;
+    font-size: 2.3rem;
     font-weight: 700;
     text-align: center;
 }
@@ -27,4 +27,20 @@ body {
 .btn:hover {
     color: #EEFAFC;
     background-color: #4fb6cb;
+}
+
+.btn:focus {
+    color: #EEFAFC;
+    background-color: #57C9E0;
+
+}
+
+@media screen and (max-width: 765px) {
+    .section-heading {
+        font-size: 30px;
+    }
+
+    .second-heading {
+        font-size: 13px;
+    }
 }

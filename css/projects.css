@@ -2,7 +2,7 @@
 
 .projects-section {
     height: auto;
-    width: 1000px;
+    width: 900px;
     margin: auto;
 }
 
@@ -14,17 +14,19 @@
 .carousel-item-inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .carousel-item-inner img {
     width: 300px;
     border-radius: 20px;
+    border: 1px solid white;
 }
 
-.carousel-item-inner div {
+.project-explain {
     text-align: start;
     padding: 30px;
+    width: 50%;
 }
 
 .carousel-item-inner h3 {
@@ -52,6 +54,17 @@
     font-size: 20px;
 }
 
+/* .projects-section-btn:focus {
+    color: white;
+    padding: 12px;
+    background-color: #57C9E0;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    font-size: 20px; */
+
+/* } */
+
 .carousel-buttons {
     margin: 0;
     padding: 0;
@@ -73,12 +86,38 @@
     .carousel-item-inner {
         flex-direction: column;
     }
-
-    .carousel-item-inner div {
+    
+    .project-explain {
         padding-top: 50px;
+        width: 100%;
     }
-
+    
     .carousel-item-inner p {
         font-size: 16px;
     }
+}
+
+@media screen and (max-width: 425px) {
+    .carousel-item-inner img {
+        width: 250px;
+    }
+}
+
+/* INDICATOR */
+.carousel-indicators {
+    width: 300px;
+    height: 20px;
+    /* background-color: red; */
+    color: #57C9E0;
+    margin: auto;
+    /* z-index: 999;
+    overflow: hidden; */
+}
+
+.carousel-indicators li {
+    /* border-radius: 100%; */
+    display: inline-block;
+    color: red;
+    /* background-color: tan; */
+
 }

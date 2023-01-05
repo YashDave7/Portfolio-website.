@@ -5,7 +5,6 @@
     top: 0;
     background-color: #162427;
     z-index: 999;
-
 }
 
 .navbar {
@@ -55,15 +54,17 @@
 /*  ++++++++ NAVBAR FOR MOBILE SCREEN */
 
 .mobile-navbar {
+    position: fixed;
+    bottom: 0;
     z-index: 999;
+    overflow: hidden;
     background-color: #162427;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
     height: 60px;
     width: 100%;
-    bottom: 0;
+    border-top: 1px solid #57C9E0;
 }
 
 .mobile-navbar-brand {
@@ -112,6 +113,10 @@
     font-size: 14px;
     color: white;
     text-decoration: none;
+}
+
+.grid-item span {
+    font-weight: 500;
 }
 
 .navbar-close {

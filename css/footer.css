@@ -58,6 +58,17 @@
     }
 }
 
+@media screen and (max-width: 760px) {
+    .footer {
+        height: 350px;
+    }
+
+    .copyright {
+        padding-bottom: 30px;
+    }
+    
+}
+
 @media screen and (max-width: 580px) {
     .footer {
         height: auto;

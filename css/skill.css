@@ -60,16 +60,22 @@
 }
 
 .progress-bar {
-    /* border-top: 6px solid #B6F0FC; */
-    border-top: 6px solid green;
-    border-width: 100%;
-    /* color: #57C9E0; */
+    background-color: #B6F0FC;
+    height: 5px;
+    border-radius: 1rem;
 }
 
-.progress-bar div {
+.my-progress {
+    background-color: #4daec2;
+    display: block;
+    height: 5px;
+    border-radius: 1rem;
+}
+
+/* .progress-bar div {
     border-width: 100px;
     border-top: 6px solid red;
-}
+} */
 
 .backend-skills {
     display: block;
@@ -91,5 +97,11 @@
 @media screen and (max-width: 768px) {
     .skills-section {
         width: auto;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .skills-individual-section {
+        padding: 0 16px;
     }
 }

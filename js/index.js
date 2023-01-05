@@ -30,15 +30,29 @@ for (i = 0; i < theme_click.length; i++) {
             }
 
             // Languages Span Text Color.
-            document.querySelector('.languages span').style.color = "white";
+            // document.querySelector('.languages span').style.color = "white";
             
             // Navbar-Mobile Background Color.
             document.querySelector('.mobile-navbar').style.backgroundColor = "#162427";
             document.querySelector('.mobile-navbar-brand').style.color = "white";
             
             // Change the change-theme icon.
-            document.getElementsByClassName('moon')[0].style.display = "none";
-            document.getElementsByClassName('sun')[0].style.display = "block";
+            document.getElementsByClassName('moon1')[0].style.display = "none";
+            document.getElementsByClassName('sun1')[0].style.display = "block";
+            document.getElementsByClassName('moon2')[0].style.display = "none";
+            document.getElementsByClassName('sun2')[0].style.display = "block";
+            
+            // Navbar Pop-up Background Color.
+            document.querySelector('.navbar-pop').style.backgroundColor = "#162427";
+            
+            // Navbar Pop-up Text Color.
+
+            pop_a_count = document.querySelectorAll('.pop-up-count');
+            for(i=0; i<pop_a_count.length; i++)
+            {
+                document.getElementsByClassName('pop-up-count')[i].style.color = "white";
+            }
+
         }
 
         // if dark mode --> change to light mode. 
@@ -65,8 +79,8 @@ for (i = 0; i < theme_click.length; i++) {
             }
 
             // Languages Span Text Color.
-            document.getElementsByClassName('span')[0].style.color = "black";
-            document.getElementsByClassName('span')[1].style.color = "black";
+            // document.getElementsByClassName('span')[0].style.color = "black";
+            // document.getElementsByClassName('span')[1].style.color = "black";
             
             // Footer Background Color.
             document.getElementsByClassName('footer')[0].style.backgroundColor = "#57c9e0";
@@ -89,8 +103,17 @@ for (i = 0; i < theme_click.length; i++) {
             }
             
             // Change the change-theme icon.
-            document.getElementsByClassName('sun')[0].style.display = "none";
-            document.getElementsByClassName('moon')[0].style.display = "block";
+            document.getElementsByClassName('sun1')[0].style.display = "none";
+            document.getElementsByClassName('moon1')[0].style.display = "block";
+            document.getElementsByClassName('sun2')[0].style.display = "none";
+            document.getElementsByClassName('moon2')[0].style.display = "block";
+            // changeSunMoon = document.querySelectorAll('.sun');
+
+            // for(j=0; j<changeSunMoon.length; j++)
+            // {
+            //     document.querySelector('.sun')[j].style.display = "none";
+            //     document.querySelector('.moon')[j].style.display = "block";
+            // }
         }
     });
 
