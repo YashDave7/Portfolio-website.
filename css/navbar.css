@@ -95,6 +95,7 @@
     display: none;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    border-top: 1px solid #57C9E0;
     /* transition: all ease-in 1s; */
 }
 
